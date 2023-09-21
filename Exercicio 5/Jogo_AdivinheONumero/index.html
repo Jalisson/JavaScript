@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        function mostrar(mostrar){
+            document.write(mostrar);
+            document.write("<br>");
+        }
+
+            var controle = 0;
+            while (controle < 3) {
+                var n = Math.round(Math.random() * 100);
+            
+                var chute = prompt("Digite um numero" + n);
+
+                if(chute == n){
+                    mostrar("UAL! você acertou "+n);
+                    break;
+                }else{
+                    mostrar("Você errou "+n);
+                }
+                controle++;
+            }
+
+
+          
+    </script>
+</body>
+</html>

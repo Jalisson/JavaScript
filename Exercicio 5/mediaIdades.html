@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var recebe = prompt("Qual quantidade de pessoas");
+        var n = parseInt(recebe);
+        var cont = 0;
+        while(cont < n){
+            var anos = prompt("Digite a idade do "+cont+" familiar <br>");
+            var idade = parseInt(anos);
+            document.write("<li>Valor: "+idade+"<li>");
+            document.write("<li>contador: "+cont+"<li>");
+
+            idade = idade +idade;
+            cont++;
+        }
+        document.write("valor de idade: "+idade);
+        var result = idade / cont;
+        document.write("resultado final: "+result+"<br>");
+    </script>
+</body>
+</html>

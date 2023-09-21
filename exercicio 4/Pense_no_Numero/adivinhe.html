@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrar(ver){
+            document.write(ver);
+        }
+        var n = prompt("Digite o numero pensado ");
+        var numero = Math.random()*100;
+        var resultado = Math.round(numero);
+        if(n > resultado ){
+            mostrar("O numero que você chutou  foi maior ao que pensei "+resultado);
+        }else if(n < resultado){
+            mostrar("O numero que você chutou  foi menor ao que pensei. Resultado: "+resultado);
+        }else if(isNaN(n)){
+            mostrar("A plataforma só recebe nuemros nessa função");
+        }else{
+            mostrar("O numero que você chutou  foi igual ao que pensei. Resultado: "+resultado);
+        }
+        
+    </script>
+</body>
+</html>

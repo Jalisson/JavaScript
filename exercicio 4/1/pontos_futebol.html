@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      
+
+
+        //função utilizada para mostrar os resultados 
+        function mostrar(ver){
+            document.write(ver);
+        }
+
+        //(vitorias * 3 ) + empates
+        var vitorias = prompt("Quantas vitorias você teve");
+        var empates = prompt("Quantos empates você teve");
+        var derrotas = prompt("Quantas derrotas o time teve?");
+        var resultado = vitorias * 3 + parseInt(empates) - derrotas;// parseInt -  converte um valor de string para int.
+
+        var vitorias_adversario = prompt("Quantas vitorias o seu adversario teve?");
+        var empates_adversario = prompt("Quantos empates o seu adversario teve?");
+        var derrotas_adversario = prompt("Quantas derrotas o tive adversario teve?");
+        var pontos_adversario = vitorias_adversario * 3 + parseInt(empates_adversario) - derrotas_adversario;
+
+
+        if(resultado > pontos_adversario){
+            mostrar("Estamos indo bem. Resultado: "+ resultado);
+        }else if(resultado < pontos_adversario){
+            mostrar("Não estamos indo bem. Resultado: "+resultado);
+        }else if(resultado == pontos_adversario){
+         mostrar("Estamos Empatados. Resultado: "+resultado);
+        }
+        mostrar("<br>Seus pontos: "+resultado +"<br> Pontos do seu adversario: "+pontos_adversario);
+
+    </script>
+</body>
+</html>

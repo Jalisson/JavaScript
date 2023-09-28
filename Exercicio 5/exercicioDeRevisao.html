@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrar(ver){
+            document.write(ver);
+            document.write("<br>");
+        }
+
+        var numero = Math.round(Math.random() * 100);
+        var controle = 0; 
+        while(numero != n){
+            var n = prompt("Qual o numero?" +numero);
+            if(n < numero){
+                mostrar("Eu pensei em um numero menor doque você digitou");
+                n = prompt("Digite outro numero");
+            }else if(n > numero){
+                mostrar("Eu pensei em um numero maior doque você digitou");
+                n = prompt("Digite outro numero");
+            }else if(n == numero){
+                mostrar("Acertou! O numero que pensei foi: "+numero);
+            }
+         }
+         mostrar(n);
+
+    </script>
+</body>
+</html>

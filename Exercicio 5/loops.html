@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrar(mensagem){
+            document.write(mensagem);
+        }
+        // for(var linha = 0; linha < 3; linha++){
+        //     mostrar("******** <br>");
+        // }
+       
+           
+            var controle = "s";
+            while(controle == "s"){
+                var v = prompt("quantodade");
+                for(var colum = 0; colum < v; colum++){
+                    document.write("*");
+                }
+                document.write("<br>");
+                controle = prompt("Deseja continuar? s para sim, f pra não");
+            }
+          
+    </script>
+</body>
+</html>
